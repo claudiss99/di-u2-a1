@@ -1,18 +1,20 @@
 const person = {
     name: 'Gregorio Y. Zara',
+    src: "https://i.imgur.com/7vQD0fPs.jpg",
     theme: {
       backgroundColor: 'black',
-      color: 'pink'
+      color: 'pink',
     }
+   
   };
   
   export default function TodoList() {
     return (
       <div style={person.theme}>
-        <h1>Tareas pendientes de {person}</h1>
+        <h1>Tareas pendientes de {person.name}</h1>
         <img
           className="avatar"
-          src="https://i.imgur.com/7vQD0fPs.jpg"
+          src= {person.src}
           alt="Gregorio Y. Zara"
         />
         <ul>

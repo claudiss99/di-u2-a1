@@ -10,12 +10,15 @@ const person = {
 };
 
 export default function TodoList() {
+  let cadena = 'a';
+  let cadenab = 'c'
+  let cadenag = cadena+cadenab
   return (
     <div style={person.theme}>
       <h1>Tareas pendientes de {person.name}</h1>
       <img
         className="avatar"
-        src="{baseUrl}{person.imageId}{person.imageSize}.jpg"
+        src={baseUrl + person.imageId + person.imageSize + ".jpg"}
         alt={person.name}
       />
       <ul>
